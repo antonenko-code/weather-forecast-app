@@ -1,0 +1,71 @@
+@import 'src/assets/styles/utils/mixins';
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include md-device {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: var(--main-font-color);
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  padding-bottom: 6px;
+  gap: 36px;
+
+  --decoration-left: 0;
+  --decoration-width: 124px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--decoration-left);
+    width: var(--decoration-width);
+    height: 5px;
+    border-radius: 5px;
+    background: var(--lines-color);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: var(--second-font-color);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--main-font-color);
+}

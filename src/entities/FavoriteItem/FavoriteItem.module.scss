@@ -1,0 +1,85 @@
+.item {
+  position: relative;
+  width: 100%;
+  max-width: 338px;
+  padding: 0 20px;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 184px;
+    clip-path: url(#clip-path);
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  &::before {
+    background: var(--city-elem-background);
+  }
+
+  &::after {
+    opacity: 0;
+    background: var(--city-elem-background-highlight);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.isSelected {
+  &::after {
+    opacity: 1;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.degrees {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: var(--main-font-color);
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.range {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--second-font-color);
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--main-font-color);
+}
+
+.image {
+  width: 134px;
+  height: 134px;
+  background-size: cover;
+  background-position: center;
+}

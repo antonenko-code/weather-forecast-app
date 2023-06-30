@@ -1,22 +1,45 @@
 {
-  "name": "weather_forecast",
+  "name": "weather-forecast-app",
+  "homepage": "https://Oleksandr-Antonenko.github.io/react-gh-pages",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.30",
     "@types/react": "^18.2.6",
+    "@types/react-custom-scrollbars": "^4.0.10",
     "@types/react-dom": "^18.2.4",
+    "@types/react-transition-group": "^4.4.6",
+    "@types/uuid": "^9.0.2",
+    "classnames": "^2.3.2",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-alice-carousel": "^2.7.1",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.62.1",
+    "swiper": "^9.3.2",
     "typescript": "^4.9.5",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +62,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-redux": "^7.1.25",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "dotenv": "^16.1.4",
+    "gh-pages": "^5.0.0"
   }
 }

@@ -1,0 +1,57 @@
+$lg-device-size: 1024px;
+$md-device-size: 640px;
+
+[data-theme="dark"] {
+  //Global colors
+  --main-background: radial-gradient(95.47% 71.89% at 93.07% 74.31%, #45278b 0%, #2e335a 100%);
+  --sidebar-background: linear-gradient(167.57deg, rgba(52, 35, 112, 0.7) -4.68%, rgba(28, 27, 51, 0.7) 95.45%);
+
+  //Components colors
+  --city-elem-background: linear-gradient(180deg, rgba(72, 49, 157, 0.4) 0%, rgba(73, 49, 158, 0) 100%);
+  --city-elem-background-highlight: linear-gradient(180deg, #54319D 0%, rgba(73, 49, 158, 0) 100%);
+  --day-elem-background: rgba(72, 49, 157, 0.2);
+  --day-elem-background-highlight: linear-gradient(180deg, #54319D 0%, rgba(73, 49, 158, 0) 100%);
+  --elem-background-highlight: linear-gradient(180deg, #54319D 0%, rgba(73, 49, 158, 0) 100%);
+  --elem-optional-background: rgba(255, 255, 255, 0);
+  --input-backround-hilight: rgba(91, 47, 164, 0.5);
+
+  //Effects
+  --elem-border-color: rgba(255, 255, 255, 0.05);
+  --elem-outer-shadow-color: rgba(0, 0, 0, 0.15);
+  --elem-inner-shadow-color: rgba(255, 255, 255, 0.15);
+
+  //Font
+  --main-font-color: #ffffff;
+  --second-font-color: rgba(235, 235, 245, 0.6);
+
+  //Other
+  --lines-color: rgba(235, 235, 245, 0.1);
+  --lines-color-hilight: #602FAA;
+}
+
+[data-theme="light"] {
+  //Global colors
+  --main-background: radial-gradient(95.47% 71.89% at 93.07% 74.31%, #FFFFFF 0%, #F4F1FF 100%);
+  --sidebar-background: linear-gradient(167.57deg, rgba(255, 255, 255, 0.7) -4.68%, rgba(248, 247, 255, 0.7) 95.45%);
+
+  //Components colors
+  --city-elem-background: linear-gradient(180deg, rgba(219, 216, 234, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  --city-elem-background-highlight: linear-gradient(180deg, rgba(194, 183, 255, 0.4) 0%, rgba(253, 253, 255, 0) 100%);
+  --day-elem-background: rgba(255, 255, 255, 0.2);
+  --day-elem-background-highlight: linear-gradient(180deg, rgba(194, 183, 255, 0.4) 0%, rgba(253, 253, 255, 0) 100%);
+  --elem-background-highlight: linear-gradient(180deg, #FFFFFF 0%, rgba(253, 253, 255, 0) 100%);
+  --elem-optional-background: rgba(194, 183, 255, 0.2);
+
+  //Effects
+  --elem-border-color: rgba(255, 255, 255, 0.2);
+  --elem-outer-shadow-color: #EFECFF;
+  --elem-inner-shadow-color: rgba(255, 255, 255, 0.25);
+
+  //Font
+  --main-font-color: #2C1C67;
+  --second-font-color: rgba(44, 28, 103, 0.6);;
+
+  //Other
+  --lines-color: #EFECFF;
+  --lines-color-hilight: #602FAA;
+}

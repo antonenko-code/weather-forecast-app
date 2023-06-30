@@ -1,0 +1,19 @@
+.container {
+  margin-bottom: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  gap: 4px;
+}
+
+.form {
+  display: flex;
+  flex: 1;
+}
+
+.error {
+  color: red;
+}

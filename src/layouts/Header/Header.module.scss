@@ -1,0 +1,22 @@
+@import 'src/assets/styles/utils/mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.showSidebar {
+  display: inline-block;
+
+  @include lg-device {
+    display: none;
+  }
+}

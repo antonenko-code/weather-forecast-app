@@ -1,0 +1,23 @@
+@import '../../assets/styles/utils/mixins';
+
+.container {
+  display: flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  overflow: hidden;
+  flex: 1;
+  gap: 28px;
+
+  @include md-device {
+    padding: 24px 36px;
+    gap: 36px;
+  }
+
+  @include lg-device {
+    padding: 36px 64px;
+  }
+}

@@ -1,0 +1,101 @@
+@import 'src/assets/styles/utils/mixins';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 36px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  gap: 36px;
+  color: var(--second-font-color);
+  border-bottom: 1px solid var(--lines-color);
+
+  @include md-device {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  gap: 4px;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--city-elem-background);
+    border-left: 2px solid var(--input-backround-hilight);
+    border-top: 2px solid var(--input-backround-hilight);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+.weather {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--main-font-color);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.degrees {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 64px;
+  margin: 0;
+  color: var(--main-font-color);
+  gap: 16px;
+}
+
+.thermometer {
+  width: 48px;
+  height: 48px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.indexes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 6px;
+}
+

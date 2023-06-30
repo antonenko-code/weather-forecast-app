@@ -1,0 +1,55 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 56px;
+  padding: 8px 0;
+  color: var(--second-font-color);
+  flex: 1;
+
+  svg {
+    display: block;
+    width: 28px;
+    height: 28px;
+
+    z-index: 1;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--lines-color);
+    transition: border-bottom-color 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid var(--lines-color-hilight);
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--main-font-color);
+      border-bottom: 1px solid var(--lines-color-hilight);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 22px;
+      color: var(--second-font-color);
+    }
+
+    &:-webkit-autofill {
+      border-bottom: 1px solid var(--lines-color);
+      -webkit-text-fill-color: var(--second-font-color);
+      transition: background-color 999999s ease-in-out 0s;
+    }
+  }
+}

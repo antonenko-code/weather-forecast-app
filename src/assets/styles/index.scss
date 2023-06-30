@@ -1,0 +1,85 @@
+@import '~normalize.css';
+@import 'utils';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background: var(--main-background);
+  background-attachment: fixed;
+}
+
+.swiper {
+  width: 100%;
+  margin: -20px;
+  padding: 20px;
+}
+.swiper-slide {
+  width: auto;
+}
+
+.favoritesSwiper {
+  height: calc(100% - 180px);
+  margin: 0;
+  padding: 0;
+}
+
+.favoritesSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.swiper-scrollbar {
+  --swiper-scrollbar-size: 3px;
+  --swiper-scrollbar-bg-color: var(--lines-color);
+
+}
+
+.swiper-scrollbar-drag {
+  --swiper-scrollbar-drag-bg-color: var(--second-font-color);
+}
+
+
+
+.i01d {
+  background-image: url('../../assets/images/day_sunny.png');
+}
+
+.i01n {
+  background-image: url('../../assets/images/night_moon.png');
+}
+
+.i02d {
+  background-image: url('../../assets/images/day_cloudy_sunny.png');
+}
+
+.i02n {
+  background-image: url('../../assets/images/night_cloudy_moon.png');
+}
+
+.i03d, .i03n, .i04d, .i04n {
+  background-image: url('../../assets/images/cloudy.png');
+}
+
+.i09d, .i09n {
+  background-image: url('../../assets/images/rainy.png');
+}
+.i10d {
+  background-image: url('../../assets/images/day_rainy_sun.png');
+}
+.i10n {
+  background-image: url('../../assets/images/night_rainy_moon.png');
+}
+
+.i11d, .i11n {
+  background-image: url('../../assets/images/rainy_thunder.png');
+}
+
+.i13d, .i13n {
+  background-image: url('../../assets/images/snowy.png');
+}

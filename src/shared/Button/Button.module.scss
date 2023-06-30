@@ -1,0 +1,65 @@
+.item {
+  border: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  background: none;
+  cursor: pointer;
+  color: var(--second-font-color);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--main-font-color);
+  }
+}
+
+.sm {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.md {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.xl {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.labeledIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.outline {
+  padding: 8px 16px;
+  border: 1px dashed var(--second-font-color);
+  border-radius: 49px;
+}
+
+.outline.sm {
+  padding: 4px 6px;
+}
+
+.outline.md {
+  padding: 6px 8px;
+}
+
+.outline.xl {
+  padding: 8px 16px;
+}
+
+
+.icon {
+  width: 28px;
+  height: 28px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
