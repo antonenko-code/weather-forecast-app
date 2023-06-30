@@ -2,7 +2,7 @@
 # Weather Forecast App
 The **Weather Forecast** app allows users to get the weather forecast for their favorite cities, including both weekly and hourly forecasts. It also utilizes geolocation to automatically display the weather for the user's current location and supports easy customization.
 ## Live Demo
-:green_circle:[**Live Demo**]()
+:green_circle:[**Live Demo**](https://Oleksandr-Antonenko.github.io/weather-forecast-app)
 
 ## About Project
 #### Technologies Used
