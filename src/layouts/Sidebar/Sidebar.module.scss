@@ -72,10 +72,14 @@
 }
 
 .isSidebarHidden {
+  -webkit-transition: top 0s 0.8s ease;
+  -moz-transition: top 0s 0.8s ease;
+  -ms-transition: top 0s 0.8s ease;
+  -o-transition: top 0s 0.8s ease;
   transition: top 0s 0.8s ease;
 
   &:before {
-    animation: menu-hide-animation 0.4s 0.4s ease-out backwards;
+    @include animation(menu-hide-animation 0.4s 0.4s ease-out backwards);
 
     @include lg-device {
       animation: none;
@@ -83,7 +87,7 @@
   }
 
   .sidebarItems {
-    animation: items-hide-animation 0.8s ease-out backwards;
+    @include animation(items-hide-animation 0.8s ease-out backwards);
 
     @include lg-device {
       animation: none;
@@ -94,9 +98,7 @@
 .isSidebarVisible {
   top: 0;
   &:before {
-    animation:
-      menu-show-animation 1.2s ease-out forwards,
-      filter-animation 0.8s 1s ease-out forwards;
+    @include animation(menu-show-animation 1.2s ease-out forwards, filter-animation 0.8s 1s ease-out forwards);
 
     @include lg-device {
       animation: none;
@@ -104,7 +106,7 @@
   }
 
   .sidebarItems {
-    animation: items-appear-animation 0.8s 1s ease-out forwards;
+    @include animation(items-appear-animation 0.8s 1s ease-out forwards);
 
     @include lg-device {
       animation: none;
@@ -133,7 +135,7 @@
   margin: 0;
 }
 
-@keyframes menu-show-animation {
+@include keyframes(menu-show-animation) {
   0% {
     opacity: 0;
     transform: scale(0.04) translateY(300%);
@@ -160,7 +162,7 @@
   }
 }
 
-@keyframes menu-hide-animation {
+@include keyframes(menu-hide-animation) {
   from {
     transform: scale(2);
     border-radius: 0;
@@ -183,7 +185,7 @@
   }
 }
 
-@keyframes items-appear-animation {
+@include keyframes(items-appear-animation) {
   from {
     opacity: 0;
     margin-top: -100%;
@@ -204,7 +206,7 @@
   }
 }
 
-@keyframes items-hide-animation {
+@include keyframes(items-hide-animation) {
   from {
     opacity: 1;
     margin-top: 0;
@@ -225,7 +227,7 @@
   }
 }
 
-@keyframes filter-animation {
+@include keyframes(filter-animation) {
   from { backdrop-filter: blur(0px); }
   to { backdrop-filter: blur(25px); }
 }
