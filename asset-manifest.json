@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weather-forecast-app/static/css/main.42b92d2d.css",
-    "main.js": "/weather-forecast-app/static/js/main.d1ff498e.js",
+    "main.css": "/weather-forecast-app/static/css/main.c6efefbd.css",
+    "main.js": "/weather-forecast-app/static/js/main.57b8c877.js",
     "static/media/night_rainy_moon.png": "/weather-forecast-app/static/media/night_rainy_moon.d0da1bdc443c9075fd73.png",
     "static/media/day_sunny.png": "/weather-forecast-app/static/media/day_sunny.ed382a49ac8e7b29b2a8.png",
     "static/media/rainy_thunder.png": "/weather-forecast-app/static/media/rainy_thunder.ab6bb4c3d714a8418bc0.png",
@@ -13,11 +13,11 @@
     "static/media/night_moon.png": "/weather-forecast-app/static/media/night_moon.2a4404f6fb67a112bfe9.png",
     "static/media/cloudy.png": "/weather-forecast-app/static/media/cloudy.69f1f93efc62db984b11.png",
     "index.html": "/weather-forecast-app/index.html",
-    "main.42b92d2d.css.map": "/weather-forecast-app/static/css/main.42b92d2d.css.map",
-    "main.d1ff498e.js.map": "/weather-forecast-app/static/js/main.d1ff498e.js.map"
+    "main.c6efefbd.css.map": "/weather-forecast-app/static/css/main.c6efefbd.css.map",
+    "main.57b8c877.js.map": "/weather-forecast-app/static/js/main.57b8c877.js.map"
   },
   "entrypoints": [
-    "static/css/main.42b92d2d.css",
-    "static/js/main.d1ff498e.js"
+    "static/css/main.c6efefbd.css",
+    "static/js/main.57b8c877.js"
   ]
 }
