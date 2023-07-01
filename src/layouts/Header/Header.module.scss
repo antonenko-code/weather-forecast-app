@@ -4,13 +4,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
+
+  @include md-device {
+    gap: 18px;
+  }
+
+  @include lg-device {
+    gap: 24px;
+  }
 }
 
 .actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
+
+  @include md-device {
+    gap: 8px;
+  }
+
+  @include lg-device {
+    gap: 12px;
+  }
 }
 
 .showSidebar {

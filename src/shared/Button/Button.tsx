@@ -37,7 +37,11 @@ export const Button: React.FC<Props> = ({
           {children}
         </div>
       )}
-      {label}
+      {label && (
+        <span className={styles.label}>
+          {label}
+        </span>
+      )}
     </button>
   );
 };

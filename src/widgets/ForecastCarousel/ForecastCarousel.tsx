@@ -52,7 +52,7 @@ export const ForecastCarousel: React.FC<Props> = React.memo(({selectedItem, setS
       </div>
 
       {currentTab === Tabs.Daily ? (
-        <Carousel>
+        <Carousel currentTab={currentTab}>
           {weather?.daily.map((item, index) => (
             <ForecastItem
               key={item.id}
@@ -64,7 +64,7 @@ export const ForecastCarousel: React.FC<Props> = React.memo(({selectedItem, setS
           ))}
         </Carousel>
       ) : (
-        <Carousel>
+        <Carousel currentTab={currentTab}>
           {weather?.hourly.map((item, index) => (
             <ForecastItem
               key={item.id}
