@@ -8,7 +8,7 @@ import { Search } from '../../features/Search';
 import { Favorites } from '../../widgets/Favorites';
 
 type Props = {
-  handleToggleSidebarState: (event: React.MouseEvent<HTMLButtonElement>) => void,
+  handleToggleSidebarState: () => void,
   isSidebarVisible: boolean,
 };
 
@@ -34,7 +34,7 @@ export const Sidebar: React.FC<Props> = ({
             </div>
           </div>
 
-          <Search />
+          <Search handleToggleSidebarState={handleToggleSidebarState}/>
           <Favorites />
         </div>
       </div>

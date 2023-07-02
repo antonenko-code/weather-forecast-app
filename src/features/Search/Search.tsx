@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Search.module.scss';
 import { Theme } from '../../types/ButtonOptions';
+import { ErrorsMessages } from '../../types/ErrorsMessages';
 import { Input } from '../../shared/Input';
 import { MdSearch } from 'react-icons/md';
 import { Button } from '../../shared/Button';
@@ -10,15 +11,14 @@ import { getCurrentLocation } from '../../utils/getCurrentLocation';
 import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { setWeather } from '../Weather/weatherSlice';
 import { clearErrors, setError, setIsLoading } from '../Execution/executionSlice';
-import { ErrorsMessages } from '../../types/ErrorsMessages';
-import { useAppSelector } from '../../hooks/useAppSelector';
 import { selectFavorite } from '../Favorites/favoritesSlice';
+import { useAppSelector } from '../../hooks/useAppSelector';
 
 type Props = {
-
+  handleToggleSidebarState: () => void,
 };
 
-export const Search: React.FC<Props> = () => {
+export const Search: React.FC<Props> = ({ handleToggleSidebarState }) => {
   const [searchValue, setSearchValue] = useState({ search: '' });
   const { onGetCurrentLocation } = useAppSelector(state => state.execution.errors)
   const { search } = searchValue;
@@ -38,6 +38,7 @@ export const Search: React.FC<Props> = () => {
     try {
       dispatch(setWeather(await searchByPlace(search)))
       setSearchValue((prev) => ({ ...prev, search: '' }))
+      handleToggleSidebarState();
     } catch {
       dispatch(setError({ onLoading: ErrorsMessages.onLoading }))
 
@@ -64,6 +65,7 @@ export const Search: React.FC<Props> = () => {
       dispatch(setIsLoading(false));
     }
   }
+
 
   return (
     <div className={styles.container}>
