@@ -2,7 +2,7 @@
 # Weather Forecast App
 The **Weather Forecast** app allows users to get the weather forecast for their favorite cities, including both weekly and hourly forecasts. It also utilizes geolocation to automatically display the weather for the user's current location and supports easy customization.
 ## Live Demo
-:green_circle:[**Live Demo**](https://Oleksandr-Antonenko.github.io/weather-forecast-app)
+:green_circle:[**Live Demo**](https://antonenko-code.github.io/weather-forecast-app)
 
 ## About Project
 #### Technologies Used
@@ -43,6 +43,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 ## Credits:
 - [OpenWeatherMap](https://openweathermap.org/api) (Weather data & Geocoding APIs)
-- Designed by [Oleksandr Antonenko](https://dribbble.com/antonenko_dev) :ukraine:
+- Designed by [Alexander Antonenko](https://dribbble.com/antonenko_dev) :ukraine:
 
 
